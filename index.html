@@ -4,23 +4,60 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="CciAU3S1VxguCOhZGWLjPlB1KevUPSHi6At75LpROhc" />
-<title>Deep Pearl Tycoon</title>
+<title>Cheato Games</title>
+<meta name="description" content="Cheato Games – a small indie studio making fun, colorful games for everyone.">
+<link rel="icon" type="image/png" href="favicon.png">
 <style>
-  body { margin: 0; background: #0e2840; color: #e8f1f8; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 640px; margin: 0 auto; padding: 48px 16px; text-align: center; }
-  img { width: 160px; height: 160px; border-radius: 32px; }
-  h1 { color: #ffd54a; margin: 16px 0 4px; }
-  p { color: #a9c4de; }
-  a { color: #7fd8ff; }
+  :root { --bg: #0e0f1f; --card: #1a1c36; --line: #2a2d52; --text: #eef1ff; --muted: #a7acd6; --orange: #ff7a00; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+         background-size: 48px 48px; background-position: center; }
+  main { max-width: 880px; margin: 0 auto; padding: 56px 16px 64px; }
+  header { text-align: center; }
+  header img { width: min(480px, 100%); image-rendering: pixelated; }
+  .tagline { color: var(--muted); font-size: 18px; margin: 18px 0 0; }
+  .bar { width: 120px; height: 4px; background: var(--orange); margin: 22px auto 0; }
+  h2 { font-size: 22px; margin: 56px 0 16px; letter-spacing: .5px; }
+  .game { display: flex; gap: 20px; align-items: center; background: var(--card); border: 1px solid var(--line);
+          border-radius: 16px; padding: 18px; }
+  .game img { width: 112px; height: 112px; border-radius: 22px; image-rendering: pixelated; flex: none; }
+  .game h3 { margin: 0 0 4px; font-size: 20px; }
+  .game p { margin: 0 0 12px; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { display: inline-block; padding: 8px 14px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 14px; }
+  .btn.primary { background: var(--orange); color: #1a0d00; }
+  .btn.ghost { border: 1px solid var(--line); color: var(--text); }
+  footer { margin-top: 56px; text-align: center; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--text); }
+  @media (max-width: 520px) { .game { flex-direction: column; text-align: center; } .links { justify-content: center; } }
 </style>
 </head>
 <body>
 <main>
-<img src="icon.png" alt="Deep Pearl Tycoon icon">
-<h1>Deep Pearl Tycoon</h1>
-<p>An idle game by Cheato Games: send your submarines into the deep sea, collect pearls and build your underwater empire.</p>
-<p><a href="privacy.html">Privacy Policy</a></p>
-<p>Contact: <a href="mailto:cheato.games1@gmail.com">cheato.games1@gmail.com</a></p>
+  <header>
+    <img src="cheato_logo.png" alt="Cheato Games">
+    <p class="tagline">Fun games so good, it feels like cheating.<br>Made with love by a small indie studio.</p>
+    <div class="bar"></div>
+  </header>
+
+  <h2>Our games</h2>
+  <div class="game">
+    <img src="icon.png" alt="Deep Pearl Tycoon icon">
+    <div>
+      <h3>Deep Pearl Tycoon</h3>
+      <p>Send submarines into the deep sea, collect pearls and build your own idle pearl empire.</p>
+      <div class="links">
+        <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.CheatoGames.DeepPearlTycoon">Get it on Google Play</a>
+        <a class="btn ghost" href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Contact: <a href="mailto:cheato.games1@gmail.com">cheato.games1@gmail.com</a></p>
+    <p>© 2026 Cheato Games</p>
+  </footer>
 </main>
 </body>
 </html>
